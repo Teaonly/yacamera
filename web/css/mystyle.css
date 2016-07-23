@@ -1,0 +1,75 @@
+html {
+    display: table;
+    margin: auto;
+
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0px, auto;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#mainform{
+    padding: 0px;
+    margin: 0px;
+    width: 700px;
+}
+
+.page-header {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+h1.logo {
+    color: #0000AA;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+h3.logo {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #cccccc;
+}
+
+.install {
+    float: right;
+    margin-top: -60px;
+}
+
+.span-info {
+    float: left;
+    margin-top: 12px;
+}
+
+.video-container {
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+div.video-player  {
+    position: relative;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+img.video-player  {
+    position: absolute;
+    margin-top: 35px;
+    width: 640px;
+    height: 360px;
+}
+
+canvas.video-player {
+    background: black;
+    position: absolute;
+    margin-top: 35px;
+    width: 480px;
+    height: 290px;
+
+    left: 68px;
+    top: 35px;
+}

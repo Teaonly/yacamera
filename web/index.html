@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>YaCamera - Share your mobile's camera everywhere.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- 最新 Bootstrap 核心 CSS 文件 boostrap 3.0.3-->
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/lib/jquery.nouislider.css">
+    <!-- 本地CSS文件 -->
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+
+<div class="container" id="mainform">
+    <div class="page-header">
+          <h1 class="logo">YaCamera:</h1>
+          <h3 class="logo">Share phone's camera everywhere</h3>
+          <div class="toolbar install">
+            <a role="button" class="btn btn-lg btn-info" id="btnInstall" target="_blank"
+               href="https://play.google.com/store/apps/details?id=com.yacamera.p2p">
+            <span class="glyphicon glyphicon-cloud-download"></span>&nbsp;Google play</a>
+          </div>
+    </div>
+
+    <div class="video-container">
+      <div class="video-controls">
+          <div class="span-info">
+              <span  id="spanInfo"></span>
+          </div>
+          <div class="clearfix form-inline  pull-right">
+              <div class="form-group">
+                <label class="sr-only" for="cameraCode">Input Camera code</label>
+                <input class="form-control" id="inputCameraCode" placeholder="Input Camera Code">
+              </div>
+              <button class="btn btn-default" id="btnConnect">Connect</button>
+          </div>
+      </div>
+
+      <div class="video-player">
+  	        <img src="img/phone.png" class="video-player" />
+            <canvas width="640px" height="360px" class="video-player" id="videoPlayer"></canvas>
+      </div>
+
+  	</div><!-- end container for captions and video -->
+
+</div>
+
+
+<!-- emscripten and interface -->
+<script src="js/emscripten/module.js"></script>
+<script src="js/avc/util.js"></script>
+<script src="js/avc/avc.js"></script>
+<script src="js/avc/yuv2rgb.js"></script>
+<script src="js/raptor.js"></script>
+<script src="js/adpcm.js"></script>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 Jquery 1.10.2, bootstrap 3.0.3-->
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
+<script src="js/lib/base64.js"></script>
+<!-- 本地应用JS文件 -->
+<script src="js/rtc_adapter.js"></script>
+<script src="js/rtc.js"></script>
+<script src="js/peer.js"></script>
+<script src="js/media.js"></script>
+<script src="js/streamer.js"></script>
+<script src="js/player.js"></script>
+<script src="js/yacamera.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
